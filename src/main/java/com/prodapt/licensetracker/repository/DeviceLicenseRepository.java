@@ -12,4 +12,5 @@ public interface DeviceLicenseRepository
 
     boolean existsByDeviceIdAndLicenseKeyAndActiveTrue(
             String deviceId, String licenseKey);
+    List<DeviceLicense> findByDeviceIdAndActiveTrue(String deviceId);
 }
