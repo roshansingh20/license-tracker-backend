@@ -68,9 +68,14 @@ public class ComplianceReportService {
                             "LICENSE EXPIRED (" + license.getLicenseKey() + ")"
                     ));
                 }
+                System.out.println("Checking device: " + device.getDeviceId());
+                System.out.println("Licenses found: " + licenses.size());
+
             }
         }
 
         return report;
+
     }
+
 }
